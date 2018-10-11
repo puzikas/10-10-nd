@@ -1,8 +1,15 @@
 console.log('aplikacija veikia')
 
-function myFunction(up) {
-	console.log('up');
+var number = document.getElementById('number');
+
+function up() {
+	var value = number.innerHTML;
+	value++;
+	number.innerHTML = value;
 }
-function generate(down) {
-	console.log('down');
+
+function down() {
+	var value = number.innerHTML;
+	value--;
+	number.innerHTML = value;
 }
